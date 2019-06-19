@@ -3,6 +3,52 @@
   <head>
     <meta charset="UTF-8">
     <title>MyWeb | Desarrollamos tu Pagina Web</title>
+    <!-- BOOTSTRAP 4 CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="home.html">
+        <img src="MyWeb.png" alt="MyWeb logo" style="width: 7%">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="home.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="cursos.html">Cursos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="seguridad.html">Seguridad</a>
+              </li>
+              
+        </ul>
+      </div>
+    </nav>
+  
+
+    <div class="container p-4">
+      
+     
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="main.js"></script>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>MyWeb | Desarrollamos tu Pagina Web</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scaley=1.0, minimum-scale=1.0">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -22,7 +68,7 @@
    <!-- Header -->
    <header class="header">
     <div class="header-content animated bounce">
-      <img src="logomyweb.png" alt="Fazt Logo" class="logo">
+      <img src="MyWeb.png" alt="Fazt Logo" class="logo">
       <div class="title">
         Creamos tu WebSite
       </div>
@@ -36,27 +82,29 @@
     <div class="services text-center">
       <h3 class="title">Contactanos</h3>
       <div class="container grid-3">
-        <div>
-            <i class="fas fa-envelope fa-5x"></i>
-          <h3>E-Mail</h3>
-          <div>
-            Escribenos un E-mail a myweb@gmail.com para obtener mas informacion.
-          </div>
-        </div>
+
         <div>
             <i class="fab fa-twitter fa-5x"></i>
           <h3>Twitter</h3>
           <div>
-                Puedes seguir a @MyWeb en Twitter para enterarte de las ultimas publicaciones, videos y muchas más novedades.
+                Siguenos en Twitter @HttpsMyWeb para enterarte de las ultimas publicaciones, videos y muchas más novedades.
           </div>
+          <button type="button" class="btn btn-secondary btn-lg btn-block">Siguenos en Twitter</button>
         </div>
+        <div>
+          <i class="fas fa-envelope fa-5x"></i>
+        <h3>E-Mail</h3>
+        <div>
+          Escribenos un E-mail a httpsmyweb@gmail.com para obtener mas informacion.
+        </div>
+      </div>
         <div>
             <i class="fab fa-instagram fa-5x"></i>
           <h3>Instagram</h3>
           <div>
             Siguenos en Instragram @MyWeb para enterarte de las ultimas publicaciones, videos y muchas más novedades.
           </div>
-        </div>
+          <button type="button" class="btn btn-secondary btn-lg btn-block">Siguenos en Instagram</button>
       </div>
     </div>
 
@@ -102,8 +150,9 @@
                     <div>
                       <h3 class="title">Acerca de Nosotros</h3>
                       <p>
-                        <span>MyWeb es una plataforma de Desarrollo Web. Somos una una compañía y una comunidad global.</span>
+                        <span>MyWeb es una plataforma de Desarrollo Web y de Seguridad Informática. Somos una una compañía y una comunidad global.</span>
                       </p>
+                      <button type="button" class="btn btn-secondary btn-sm">Leer Más</button>
                     </div>
                   </div>
                 </div>
