@@ -1,15 +1,21 @@
 <?php
-    $destinatario = "httpsmyweb@gmail.com";
-    $nombre = $_POST["nombre"];
-    $asunto = $_POST["asunto"];
-    $mensaje = $_POST["mensaje"];
-    $email = $_POST["email"];
 
-    $header = "Enviado desde la pagina de MyWeb";
-    $mensajeCompleto = $mensaje . "\nAtentamente: " . $nombre;
+// Llamando a los campos 
+ $nombre = $_POST["nombre"];
+ $asunto = $_POST["asunto"];
+ $mensaje = $_POST["mensaje"];
+ $email = $_POST["email"];
 
-    mail($destinatario, $asunto, $mensajeCompleto, $email, $header);
-    echo "<script>alert("Correo Enviado Exitosamente")</script>";
-    echo "<script> setTimeout(\"location.href="contactanos.html"\",1000)</script>";
+// Datos para el correo 
+$destinatario = "httpsmyweb@gmail.com";
+$asunto = "Enviado desde la pagina de MyWeb";  
+
+$carta = "De: $nombre \n";
+$carta .= "Correo: $email \n";
+$carta .= "Asunto: $asunto \n";
+$carta .= "Mensaje: $mensaje \n";
+
+// Enviando Mensaje
+mail($destinatario, $carta);
 
 ?>
